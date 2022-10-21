@@ -147,6 +147,8 @@ crontab -e
 0 8 * * * python3 report.py -m manual -u 2020xxxxxxxx -p xxxxxxxxx -bk Sdxwo9xxxxxxx -bc xxx用户已打卡成功 > out.file 2>&1 &
 ```
 
+如果自己的笔记本系统为macOS或Linux，也可以将a.sh添加到计划任务中。a.sh的具体说明见a.sh内的注释。
+
 ---
 
 ### 效果图
