@@ -153,7 +153,8 @@ def report(sess):
     utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
     now = utc_dt.astimezone(timezone(timedelta(hours=8)))
     post_info = raw_info
-
+    
+    post_info['CLOCK_SITUATION'] ='江苏省南京市浦口区'
     post_info['CREATED_AT'] = now.strftime("%Y-%m-%d %H:%M:%S")
     post_info['CZRQ'] = now.strftime("%Y-%m-%d %H:%M:%S")
     post_info['FILL_TIME'] = now.strftime(
