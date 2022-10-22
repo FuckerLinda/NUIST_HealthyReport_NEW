@@ -9,7 +9,5 @@ read aa <<< $(cat ~/NUIST_HealthyReport_NEW/date.txt)
 read bb <<< $(echo `date '+%Y%m%d'`)
 if ((aa!=bb))
 then
-echo 3
-python ~/NUIST_HealthyReport_NEW/report.py
-echo $bb>~/NUIST_HealthyReport_NEW/date.txt
+python ~/NUIST_HealthyReport_NEW/report.py && echo $bb>~/NUIST_HealthyReport_NEW/date.txt
 fi
